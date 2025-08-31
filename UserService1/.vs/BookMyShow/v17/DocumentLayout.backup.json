@@ -1,0 +1,227 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mhtna\\source\\repos\\UserService1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mhtna\\source\\repos\\UserService1\\UserService1\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UserService1\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{852AF6A4-CDD3-40CC-8AF2-37727EC17C22}|SearchService\\SearchService.csproj|c:\\users\\mhtna\\source\\repos\\userservice1\\searchservice\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{852AF6A4-CDD3-40CC-8AF2-37727EC17C22}|SearchService\\SearchService.csproj|solutionrelative:searchservice\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A00D6AE-3696-492B-BBF5-403E50968C38}|BookingService\\BookingService.csproj|c:\\users\\mhtna\\source\\repos\\userservice1\\bookingservice\\controllers\\holdcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A00D6AE-3696-492B-BBF5-403E50968C38}|BookingService\\BookingService.csproj|solutionrelative:bookingservice\\controllers\\holdcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A00D6AE-3696-492B-BBF5-403E50968C38}|BookingService\\BookingService.csproj|c:\\users\\mhtna\\source\\repos\\userservice1\\bookingservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A00D6AE-3696-492B-BBF5-403E50968C38}|BookingService\\BookingService.csproj|solutionrelative:bookingservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067CD539-AD29-44E6-B2F4-009A361BDEC5}|EventService\\EventService.csproj|c:\\users\\mhtna\\source\\repos\\userservice1\\eventservice\\eventservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{067CD539-AD29-44E6-B2F4-009A361BDEC5}|EventService\\EventService.csproj|solutionrelative:eventservice\\eventservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\Users\\mhtna\\source\\repos\\UserService1\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A26D0EE-8321-4C5E-8497-10157BDFAE5A}|NotificationService\\NotificationService.csproj|c:\\users\\mhtna\\source\\repos\\userservice1\\notificationservice\\bookingconfirmedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A26D0EE-8321-4C5E-8497-10157BDFAE5A}|NotificationService\\NotificationService.csproj|solutionrelative:notificationservice\\bookingconfirmedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067CD539-AD29-44E6-B2F4-009A361BDEC5}|EventService\\EventService.csproj|c:\\users\\mhtna\\source\\repos\\userservice1\\eventservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{067CD539-AD29-44E6-B2F4-009A361BDEC5}|EventService\\EventService.csproj|solutionrelative:eventservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067CD539-AD29-44E6-B2F4-009A361BDEC5}|EventService\\EventService.csproj|c:\\users\\mhtna\\source\\repos\\userservice1\\eventservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067CD539-AD29-44E6-B2F4-009A361BDEC5}|EventService\\EventService.csproj|solutionrelative:eventservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067CD539-AD29-44E6-B2F4-009A361BDEC5}|EventService\\EventService.csproj|c:\\users\\mhtna\\source\\repos\\userservice1\\eventservice\\controllers\\theaterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067CD539-AD29-44E6-B2F4-009A361BDEC5}|EventService\\EventService.csproj|solutionrelative:eventservice\\controllers\\theaterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mhtna\\source\\repos\\UserService1\\UserService1\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UserService1\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mhtna\\source\\repos\\UserService1\\UserService1\\Controllers\\UsersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UserService1\\Controllers\\UsersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mhtna\\source\\repos\\UserService1\\UserService1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UserService1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MoviesController.cs",
+              "DocumentMoniker": "C:\\Users\\mhtna\\source\\repos\\UserService1\\SearchService\\Controllers\\MoviesController.cs",
+              "RelativeDocumentMoniker": "SearchService\\Controllers\\MoviesController.cs",
+              "ToolTip": "C:\\Users\\mhtna\\source\\repos\\UserService1\\SearchService\\Controllers\\MoviesController.cs",
+              "RelativeToolTip": "SearchService\\Controllers\\MoviesController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T00:45:20.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mhtna\\source\\repos\\UserService1\\BookingService\\Program.cs",
+              "RelativeDocumentMoniker": "BookingService\\Program.cs",
+              "ToolTip": "C:\\Users\\mhtna\\source\\repos\\UserService1\\BookingService\\Program.cs",
+              "RelativeToolTip": "BookingService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T00:15:41.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mhtna\\source\\repos\\UserService1\\UserService1\\Program.cs",
+              "RelativeDocumentMoniker": "UserService1\\Program.cs",
+              "ToolTip": "C:\\Users\\mhtna\\source\\repos\\UserService1\\UserService1\\Program.cs",
+              "RelativeToolTip": "UserService1\\Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T22:25:02.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EventService.csproj",
+              "DocumentMoniker": "C:\\Users\\mhtna\\source\\repos\\UserService1\\EventService\\EventService.csproj",
+              "RelativeDocumentMoniker": "EventService\\EventService.csproj",
+              "ToolTip": "C:\\Users\\mhtna\\source\\repos\\UserService1\\EventService\\EventService.csproj",
+              "RelativeToolTip": "EventService\\EventService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-30T22:22:09.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HoldController.cs",
+              "DocumentMoniker": "C:\\Users\\mhtna\\source\\repos\\UserService1\\BookingService\\Controllers\\HoldController.cs",
+              "RelativeDocumentMoniker": "BookingService\\Controllers\\HoldController.cs",
+              "ToolTip": "C:\\Users\\mhtna\\source\\repos\\UserService1\\BookingService\\Controllers\\HoldController.cs",
+              "RelativeToolTip": "BookingService\\Controllers\\HoldController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T00:05:38.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\mhtna\\source\\repos\\UserService1\\EventService\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "EventService\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\mhtna\\source\\repos\\UserService1\\EventService\\appsettings.Development.json",
+              "RelativeToolTip": "EventService\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-29T15:52:17.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\mhtna\\source\\repos\\UserService1\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\mhtna\\source\\repos\\UserService1\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-08-29T15:52:02.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\mhtna\\source\\repos\\UserService1\\UserService1\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "UserService1\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\mhtna\\source\\repos\\UserService1\\UserService1\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "UserService1\\Controllers\\AuthController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T00:07:00.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\mhtna\\source\\repos\\UserService1\\UserService1\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "UserService1\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\mhtna\\source\\repos\\UserService1\\UserService1\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "UserService1\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T22:31:40.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\mhtna\\source\\repos\\UserService1\\UserService1\\appsettings.json",
+              "RelativeDocumentMoniker": "UserService1\\appsettings.json",
+              "ToolTip": "C:\\Users\\mhtna\\source\\repos\\UserService1\\UserService1\\appsettings.json",
+              "RelativeToolTip": "UserService1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-29T15:43:57.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookingConfirmedConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\mhtna\\source\\repos\\UserService1\\NotificationService\\BookingConfirmedConsumer.cs",
+              "RelativeDocumentMoniker": "NotificationService\\BookingConfirmedConsumer.cs",
+              "ToolTip": "C:\\Users\\mhtna\\source\\repos\\UserService1\\NotificationService\\BookingConfirmedConsumer.cs",
+              "RelativeToolTip": "NotificationService\\BookingConfirmedConsumer.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T00:05:38.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TheatersController.cs",
+              "DocumentMoniker": "C:\\Users\\mhtna\\source\\repos\\UserService1\\EventService\\Controllers\\TheatersController.cs",
+              "RelativeDocumentMoniker": "EventService\\Controllers\\TheatersController.cs",
+              "ToolTip": "C:\\Users\\mhtna\\source\\repos\\UserService1\\EventService\\Controllers\\TheatersController.cs",
+              "RelativeToolTip": "EventService\\Controllers\\TheatersController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T00:01:08.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mhtna\\source\\repos\\UserService1\\EventService\\Program.cs",
+              "RelativeDocumentMoniker": "EventService\\Program.cs",
+              "ToolTip": "C:\\Users\\mhtna\\source\\repos\\UserService1\\EventService\\Program.cs",
+              "RelativeToolTip": "EventService\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAIBJwC0AAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T23:58:40.57Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

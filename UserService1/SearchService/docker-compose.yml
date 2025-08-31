@@ -1,0 +1,32 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: pg-users
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: useradmin
+      POSTGRES_PASSWORD: "Passw0rd!"
+      POSTGRES_DB: moviedb
+    ports:
+      # if 5432 is busy locally, change to "5433:5432"
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # auto-run any .sql or .sh files on first startup
+      - ./init:/docker-entrypoint-initdb.d
+
+  # Optional admin UI
+  pgadmin:
+    image: dpage/pgadmin4:8
+    container_name: pgadmin
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: "Passw0rd!"
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgres
+
+volumes:
+  pgdata:

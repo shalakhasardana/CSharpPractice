@@ -1,0 +1,1 @@
+C:\Users\mhtna\source\repos\UserService1\BookingService\obj\Debug\net8.0\staticwebassets.build.json

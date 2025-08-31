@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "BookingService.Controllers.HoldController",
+    "Method": "Confirm",
+    "RelativePath": "bookings/confirm",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "BookingService.Models\u002BConfirmBookingRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingService.Models\u002BConfirmBookingResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookingService.Controllers.HoldController",
+    "Method": "CreateHold",
+    "RelativePath": "holds",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "BookingService.Models\u002BCreateHoldRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingService.Models\u002BCreateHoldResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

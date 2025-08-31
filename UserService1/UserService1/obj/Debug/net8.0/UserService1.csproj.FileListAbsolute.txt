@@ -1,0 +1,8 @@
+C:\Users\mhtna\source\repos\UserService1\UserService1\obj\Debug\net8.0\UserService1.csproj.AssemblyReference.cache
+C:\Users\mhtna\source\repos\UserService1\UserService1\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\mhtna\source\repos\UserService1\UserService1\obj\Debug\net8.0\UserService1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mhtna\source\repos\UserService1\UserService1\obj\Debug\net8.0\UserService1.AssemblyInfoInputs.cache
+C:\Users\mhtna\source\repos\UserService1\UserService1\obj\Debug\net8.0\UserService1.AssemblyInfo.cs
+C:\Users\mhtna\source\repos\UserService1\UserService1\obj\Debug\net8.0\UserService1.csproj.CoreCompileInputs.cache
+C:\Users\mhtna\source\repos\UserService1\UserService1\obj\Debug\net8.0\UserService1.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\mhtna\source\repos\UserService1\UserService1\obj\Debug\net8.0\UserService1.MvcApplicationPartsAssemblyInfo.cache

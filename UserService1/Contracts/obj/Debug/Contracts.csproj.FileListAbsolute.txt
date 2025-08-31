@@ -1,0 +1,6 @@
+C:\Users\mhtna\source\repos\UserService1\Contracts\bin\Debug\Contracts.dll
+C:\Users\mhtna\source\repos\UserService1\Contracts\bin\Debug\Contracts.pdb
+C:\Users\mhtna\source\repos\UserService1\Contracts\obj\Debug\Contracts.csproj.AssemblyReference.cache
+C:\Users\mhtna\source\repos\UserService1\Contracts\obj\Debug\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\mhtna\source\repos\UserService1\Contracts\obj\Debug\Contracts.dll
+C:\Users\mhtna\source\repos\UserService1\Contracts\obj\Debug\Contracts.pdb
