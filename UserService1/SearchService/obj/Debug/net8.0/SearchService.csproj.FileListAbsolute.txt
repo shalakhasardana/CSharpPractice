@@ -21,6 +21,7 @@ C:\Users\mhtna\source\repos\UserService1\SearchService\obj\Debug\net8.0\SearchSe
 C:\Users\mhtna\source\repos\UserService1\SearchService\obj\Debug\net8.0\SearchService.csproj.CoreCompileInputs.cache
 C:\Users\mhtna\source\repos\UserService1\SearchService\obj\Debug\net8.0\SearchService.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\mhtna\source\repos\UserService1\SearchService\obj\Debug\net8.0\SearchService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mhtna\source\repos\UserService1\SearchService\obj\Debug\net8.0\SearchService.sourcelink.json
 C:\Users\mhtna\source\repos\UserService1\SearchService\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\mhtna\source\repos\UserService1\SearchService\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\mhtna\source\repos\UserService1\SearchService\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

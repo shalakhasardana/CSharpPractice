@@ -1,14 +1,7 @@
-C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\appsettings.json
-C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\EventService.staticwebassets.endpoints.json
 C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\EventService.exe
-C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\EventService.deps.json
-C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\EventService.runtimeconfig.json
 C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\EventService.dll
 C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\EventService.pdb
 C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
@@ -21,6 +14,13 @@ C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\Swashbuck
 C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\appsettings.json
+C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\EventService.staticwebassets.endpoints.json
+C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\EventService.deps.json
+C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\EventService.runtimeconfig.json
+C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\mhtna\source\repos\UserService1\EventService\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\mhtna\source\repos\UserService1\EventService\obj\Debug\net8.0\EventService.csproj.AssemblyReference.cache
 C:\Users\mhtna\source\repos\UserService1\EventService\obj\Debug\net8.0\rpswa.dswa.cache.json
 C:\Users\mhtna\source\repos\UserService1\EventService\obj\Debug\net8.0\EventService.GeneratedMSBuildEditorConfig.editorconfig
@@ -29,6 +29,7 @@ C:\Users\mhtna\source\repos\UserService1\EventService\obj\Debug\net8.0\EventServ
 C:\Users\mhtna\source\repos\UserService1\EventService\obj\Debug\net8.0\EventService.csproj.CoreCompileInputs.cache
 C:\Users\mhtna\source\repos\UserService1\EventService\obj\Debug\net8.0\EventService.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\mhtna\source\repos\UserService1\EventService\obj\Debug\net8.0\EventService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mhtna\source\repos\UserService1\EventService\obj\Debug\net8.0\EventService.sourcelink.json
 C:\Users\mhtna\source\repos\UserService1\EventService\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\mhtna\source\repos\UserService1\EventService\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\mhtna\source\repos\UserService1\EventService\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

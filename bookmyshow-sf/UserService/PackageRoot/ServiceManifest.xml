@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceManifest Name="UserServicePkg" Version="1.0.5"
+                 xmlns="http://schemas.microsoft.com/2011/01/fabric">
+	<ServiceTypes>
+		<StatelessServiceType ServiceTypeName="UserServiceType" />
+	</ServiceTypes>
+
+	<CodePackage Name="Code" Version="1.0.5">
+		<EntryPoint>
+			<ExeHost>
+				<Program>UserService.exe</Program>
+				<ConsoleRedirection FileRetentionCount="5" FileMaxSizeInKb="2048" />
+			</ExeHost>
+		</EntryPoint>
+
+		<!-- Environment variables (bind to appsettings via Section__Key) -->
+		<EnvironmentVariables>
+
+			<!-- Which appsettings profile to load -->
+			<EnvironmentVariable Name="ASPNETCORE_ENVIRONMENT" Value="[ASPNET_ENV]" />
+
+			<!-- BmsOptions -->
+			<EnvironmentVariable Name="Bms__Environment"           Value="[BMS_ENV]" />
+			<EnvironmentVariable Name="Bms__ClusterMode"           Value="[CLUSTER_MODE]" />
+			<EnvironmentVariable Name="Bms__ReverseProxyEnabled"   Value="[REVERSE_PROXY]" />
+
+			<!-- Choose DB provider: Postgres | SqlServer -->
+			<EnvironmentVariable Name="Bms__DbProvider"            Value="[DB_PROVIDER]" />
+
+			<!-- Connection strings (only the one matching DbProvider is used) -->
+			<EnvironmentVariable Name="Bms__PostgresConnection"    Value="[POSTGRES_CONN]" />
+			<EnvironmentVariable Name="Bms__SqlServerConnection"   Value="[SQL_CONN]" />
+
+			<!-- JWT -->
+			<EnvironmentVariable Name="Jwt__Issuer"                Value="[JWT_ISSUER]" />
+			<EnvironmentVariable Name="Jwt__Audience"              Value="[JWT_AUDIENCE]" />
+			<EnvironmentVariable Name="Jwt__Secret"                Value="[JWT_SECRET]" />
+
+			<!-- Optional: publish a base URL for clients (handy for logs/health) -->
+			<EnvironmentVariable Name="Bms__PublicBaseUrl"         Value="[PUBLIC_BASE_URL]" />
+
+		</EnvironmentVariables>
+	</CodePackage>
+
+	<Resources>
+		<Endpoints>
+			<Endpoint Name="UserServiceHttp" Protocol="http" Type="Input" Port="8081" />
+		</Endpoints>
+	</Resources>
+</ServiceManifest>

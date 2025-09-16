@@ -5,6 +5,29 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/show/{showId}": {
+      "get": {
+        "tags": [
+          "Show"
+        ],
+        "parameters": [
+          {
+            "name": "showId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Theaters": {
       "get": {
         "tags": [

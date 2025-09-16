@@ -1,4 +1,12 @@
 services:
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    command: ["redis-server","--appendonly","yes","--requirepass","Passw0rd!"]
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
   rabbitmq:
     image: rabbitmq:3-management
     ports:
@@ -17,7 +25,7 @@ services:
       # if 5432 is busy locally, change to "5433:5432"
       - "5432:5432"
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - pgdata:/var/lib/postgresql/data   # <- old volume
       # auto-run any .sql or .sh files on first startup
       - ./init:/docker-entrypoint-initdb.d
 
@@ -44,7 +52,7 @@ services:
     Rabbit__Host: rabbitmq
     Rabbit__Username: guest
     Rabbit__Password: guest
-   depends_on: [rabbitmq]
+   depends_on: [rabbitmq, postgres, redis]
    ports:
     - "5001:8080"
   notificationservice:
@@ -63,3 +71,4 @@ services:
 volumes:
   pgdata:
   pgadmin-data:  
+  redisdata:    

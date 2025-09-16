@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/bookmyshow-sf" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="InstanceCount" Value="1" />
+    <Parameter Name="ASPNET_ENV" Value="Development" />
+    <Parameter Name="BMS_ENV" Value="dev" />
+    <Parameter Name="CLUSTER_MODE" Value="Local" />
+    <Parameter Name="REVERSE_PROXY" Value="true" />
+    <Parameter Name="DB_PROVIDER" Value="Postgres" />
+    <Parameter Name="POSTGRES_CONN" Value="Host=localhost;Port=5432;Username=postgres;Password=postgres;Database=users_db;SslMode=Disable" />
+    <Parameter Name="SQL_CONN" Value="Server=.;Database=users_db;Trusted_Connection=True;Encrypt=False" />
+    <Parameter Name="JWT_ISSUER" Value="bms" />
+    <Parameter Name="JWT_AUDIENCE" Value="bms-users" />
+    <Parameter Name="JWT_SECRET" Value="your_local_long_secret_32+_bytes" />
+    <Parameter Name="PUBLIC_BASE_URL" Value="http://localhost:19081/bookmyshow-sf/UserService" />
+  </Parameters>
+</Application>

@@ -25,6 +25,7 @@ C:\Users\mhtna\source\repos\UserService1\NotificationService\obj\Debug\net8.0\No
 C:\Users\mhtna\source\repos\UserService1\NotificationService\obj\Debug\net8.0\NotificationService.csproj.CoreCompileInputs.cache
 C:\Users\mhtna\source\repos\UserService1\NotificationService\obj\Debug\net8.0\NotificationService.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\mhtna\source\repos\UserService1\NotificationService\obj\Debug\net8.0\NotificationService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mhtna\source\repos\UserService1\NotificationService\obj\Debug\net8.0\NotificationService.sourcelink.json
 C:\Users\mhtna\source\repos\UserService1\NotificationService\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\mhtna\source\repos\UserService1\NotificationService\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\mhtna\source\repos\UserService1\NotificationService\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

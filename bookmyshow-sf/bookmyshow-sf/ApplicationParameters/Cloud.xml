@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/bookmyshow-sf" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="InstanceCount" Value="1" />
+    <Parameter Name="ASPNET_ENV" Value="azure" />
+    <Parameter Name="BMS_ENV" Value="azure" />
+    <Parameter Name="CLUSTER_MODE" Value="Azure" />
+    <Parameter Name="REVERSE_PROXY" Value="true" />
+    <Parameter Name="DB_PROVIDER" Value="CosmosPostgres" />
+    <!-- or SqlServer -->
+    <Parameter Name="POSTGRES_CONN" Value="Host=bms-pg.postgres.database.azure.com;Port=5432;Username=pgadmin;Password=Test1@123456;Database=users_db;SslMode=Require" />
+    <Parameter Name="SQL_CONN" Value="Server=SQLSERVER.database.windows.net,1433;Database=users_db;User ID=USER;Password=PWD;Encrypt=True;TrustServerCertificate=False" />
+    <Parameter Name="JWT_ISSUER" Value="bms" />
+    <Parameter Name="JWT_AUDIENCE" Value="bms-users" />
+    <Parameter Name="JWT_SECRET" Value="CHANGE_ME_tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttBYTES+" />
+    <Parameter Name="PUBLIC_BASE_URL" Value="https://bms-sfmc.eastus.cloudapp.azure.com:19081/bookmyshow-sf/UserService" />
+  </Parameters>
+</Application>

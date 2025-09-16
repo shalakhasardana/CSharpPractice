@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "EventService.Controllers.ShowController",
+    "Method": "GetShow",
+    "RelativePath": "api/show/{showId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "showId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EventService.Controllers.TheatersController",
     "Method": "List",
     "RelativePath": "api/Theaters",

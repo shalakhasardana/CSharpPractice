@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="bookmyshow-sfType" ApplicationTypeVersion="1.0.5" xmlns="http://schemas.microsoft.com/2011/01/fabric" ManifestId="d255e35a-09c3-4a72-9008-5e8d6c37eb7b">
+  <Parameters>
+    <Parameter Name="InstanceCount" DefaultValue="1" />
+    <Parameter Name="ASPNET_ENV" DefaultValue="Development" />
+    <Parameter Name="BMS_ENV" DefaultValue="dev" />
+    <Parameter Name="CLUSTER_MODE" DefaultValue="Local" />
+    <Parameter Name="REVERSE_PROXY" DefaultValue="true" />
+    <Parameter Name="DB_PROVIDER" DefaultValue="Postgres" />
+    <Parameter Name="POSTGRES_CONN" DefaultValue="Host=localhost;Port=5432;Username=postgres;Password=postgres;Database=users_db;SslMode=Disable" />
+    <Parameter Name="SQL_CONN" DefaultValue="Server=.;Database=users_db;Trusted_Connection=True;Encrypt=False" />
+    <Parameter Name="JWT_ISSUER" DefaultValue="bms" />
+    <Parameter Name="JWT_AUDIENCE" DefaultValue="bms-users" />
+    <Parameter Name="JWT_SECRET" DefaultValue="CHANGE_ME_DevelopmenttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttBYTES" />
+    <Parameter Name="PUBLIC_BASE_URL" DefaultValue="http://localhost:19081/bookmyshow-sf/UserService" />
+  </Parameters>
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="UserServicePkg" ServiceManifestVersion="1.0.5" />
+    <EnvironmentOverrides CodePackageRef="Code">
+      <EnvironmentVariable Name="ASPNETCORE_ENVIRONMENT" Value="[ASPNET_ENV]" />
+      <EnvironmentVariable Name="Bms__Environment" Value="[BMS_ENV]" />
+      <EnvironmentVariable Name="Bms__ClusterMode" Value="[CLUSTER_MODE]" />
+      <EnvironmentVariable Name="Bms__ReverseProxyEnabled" Value="[REVERSE_PROXY]" />
+      <EnvironmentVariable Name="Bms__DbProvider" Value="[DB_PROVIDER]" />
+      <EnvironmentVariable Name="Bms__PostgresConnection" Value="[POSTGRES_CONN]" />
+      <EnvironmentVariable Name="Bms__SqlServerConnection" Value="[SQL_CONN]" />
+      <EnvironmentVariable Name="Jwt__Issuer" Value="[JWT_ISSUER]" />
+      <EnvironmentVariable Name="Jwt__Audience" Value="[JWT_AUDIENCE]" />
+      <EnvironmentVariable Name="Jwt__Secret" Value="[JWT_SECRET]" />
+      <EnvironmentVariable Name="Bms__PublicBaseUrl" Value="[PUBLIC_BASE_URL]" />
+    </EnvironmentOverrides>
+  </ServiceManifestImport>
+</ApplicationManifest>

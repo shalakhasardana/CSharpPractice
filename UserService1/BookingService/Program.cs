@@ -1,7 +1,26 @@
+using BookingService.Service;
+using BookingService.Shard1;
 using MassTransit;
 using Npgsql;
+using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddMemoryCache();
+// Redis (localhost default)
+builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
+{
+    var cs = builder.Configuration["Redis:Connection"]!;
+    var opts = ConfigurationOptions.Parse(cs);
+    opts.KeepAlive = 60;
+    opts.ReconnectRetryPolicy = new ExponentialRetry(5000);
+    return ConnectionMultiplexer.Connect(opts);
+});
+
+builder.Services.AddScoped<IHoldService, HoldService>();
+
+// Seats cache service
+builder.Services.AddSingleton<IRedisSeatsCache, RedisSeatsCache>();
 
 builder.Services.AddMassTransit(x =>
 {
@@ -15,17 +34,30 @@ builder.Services.AddMassTransit(x =>
     });
 });
 
-// 1) Postgres connection pool (NpgsqlDataSource)
 
-var connString = builder.Configuration.GetConnectionString("Postgres")!;
+// Catalog (moviedb) DataSource
+var catalogConn = builder.Configuration["Catalog:ConnectionString"];
+if (string.IsNullOrWhiteSpace(catalogConn))
+    throw new InvalidOperationException("Catalog:ConnectionString configuration is missing or empty.");
+builder.Services.AddSingleton<NpgsqlDataSource>(_ =>
+    NpgsqlDataSource.Create(catalogConn));
 
-builder.Services.AddSingleton<NpgsqlDataSource>(sp =>
+// Shard connections
+var shardConfigs = builder.Configuration.GetSection("Shards").GetChildren()
+    .Select(s => (Id: int.Parse(s["Id"]!), Conn: s["ConnectionString"]!))
+    .ToList();
+
+
+builder.Services.AddSingleton<IShardDb>(new ShardDb(shardConfigs));
+
+builder.Services.AddSingleton<IShardResolver>(sp =>
 {
-    var dsb = new NpgsqlDataSourceBuilder(connString);
-    var lf = sp.GetRequiredService<ILoggerFactory>();
-    dsb.UseLoggerFactory(lf);
-    return dsb.Build();
+    var catalog = sp.GetRequiredService<NpgsqlDataSource>();
+    // If no mapping is found in the catalog, fallback to jump hash across these shards
+    var fallbackShards = shardConfigs.Count;
+    return new CatalogFirstShardResolver(catalog, fallbackShards);
 });
+
 
 // Add services to the container.
 

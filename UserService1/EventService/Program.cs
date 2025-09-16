@@ -1,3 +1,4 @@
+using EventService.Cache;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Npgsql;
@@ -14,8 +15,9 @@ builder.Services.AddSingleton<NpgsqlDataSource>(_ =>
 });
 
 // Add services to the container.
-
+builder.Services.AddMemoryCache();
 builder.Services.AddControllers();
+builder.Services.AddSingleton<AppCache>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

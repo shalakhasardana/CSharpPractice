@@ -2,7 +2,7 @@
   {
     "ContainingType": "BookingService.Controllers.HoldController",
     "Method": "Confirm",
-    "RelativePath": "bookings/confirm",
+    "RelativePath": "api/Hold/bookings/confirm",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -28,7 +28,7 @@
   {
     "ContainingType": "BookingService.Controllers.HoldController",
     "Method": "CreateHold",
-    "RelativePath": "holds",
+    "RelativePath": "api/Hold/holds",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -42,6 +42,64 @@
     "ReturnTypes": [
       {
         "Type": "BookingService.Models\u002BCreateHoldResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EventService.Controllers.ShowController",
+    "Method": "GetShow",
+    "RelativePath": "api/show/{showId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "showId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookingService.Controllers.ShowsController",
+    "Method": "GetSeats",
+    "RelativePath": "api/shows/{showId}/seats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "showId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventService.Controllers.TheatersController",
+    "Method": "List",
+    "RelativePath": "api/Theaters",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EventService.Controllers.TheatersController\u002BTheaterDto, EventService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
