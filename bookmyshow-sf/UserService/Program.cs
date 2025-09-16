@@ -17,16 +17,8 @@ namespace UserService
         {
             try
             {
-                // Build config once for the host process
-                var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Development";
-
-                // Optional: read resolved config too
-                var cfg = new ConfigurationBuilder()
-                    .SetBasePath(AppContext.BaseDirectory)
-                    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                    .AddJsonFile($"appsettings.{env}.json", optional: true, reloadOnChange: true)
-                    .AddEnvironmentVariables()
-                    .Build();
+                // Wire lazy DI **once**
+                Bootstrap.ConfigureProd();
 
                 string Mask(string s) => string.IsNullOrEmpty(s) ? s :
                     s.Length <= 8 ? "********" : s.Substring(0, 4) + "…" + s.Substring(s.Length - 4);
@@ -49,9 +41,10 @@ namespace UserService
                 }
                 Console.Out.Flush(); // ensure it hits stdout log
 
+                // 3) Register the Service Fabric stateless service
                 ServiceRuntime.RegisterServiceAsync(
                     serviceTypeName: "UserServiceType",
-                    serviceFactory: ctx => new UserStatelessService(ctx, cfg)
+                    serviceFactory: ctx => new UserStatelessService(ctx)
                 ).GetAwaiter().GetResult();
 
 

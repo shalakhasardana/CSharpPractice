@@ -15,25 +15,16 @@ namespace UserService
     /// </summary>
     internal sealed class UserStatelessService : StatelessService
     {
-        private readonly App _app = default!;
+        private readonly CompositionRoot.App _app;
         private readonly MiniRouter _router = new();
 
-        public UserStatelessService(StatelessServiceContext context, IConfiguration cfg)
-            : base(context)
+        public UserStatelessService(StatelessServiceContext context)
+            :base(context)
         {
-            // Bind options (appsettings + env)
-            var bms = new BmsOptions();
-            cfg.GetSection("Bms").Bind(bms);
+            // All wiring is lazy and already configured in Bootstrap.ConfigureProd()
+            _app = new CompositionRoot.App();
 
-            // Choose DB provider by config
-            IDbConnectionFactory dbFactory =
-                string.Equals(bms.DbProvider, "SqlServer", StringComparison.OrdinalIgnoreCase)
-                    ? new SqlConnectionFactory(bms.SqlServerConnection)
-                    : new NpgsqlConnectionFactory(bms.PostgresConnection);
-
-            // Your CompositionRoot.App can be extended to take a factory (or wrap it)
-            _app = new App(dbFactory, cfg); // adapt ctor in CompositionRoot if needed
-
+            // Define routes — controllers can use _app.* (which resolves lazily)
             _router
                 .Map("GET", "/api/health", (c, t) => Controllers.HealthController.Health(c, t))
                 .Map("POST", "/api/auth/login", (c, t) => Controllers.AuthController.Login(_app, c, t))

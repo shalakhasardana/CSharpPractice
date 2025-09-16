@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using UserService.Infrastructure;
 using UserService.Repositories;
 using UserService.Services;
+using UserService.ServiceUtils;
 
 namespace UserService
 {
@@ -22,15 +23,17 @@ namespace UserService
             public readonly UserServiceLogic UserLogic;
             public readonly RoleService RoleLogic;
 
-            public App(IDbConnectionFactory db, IConfiguration cfg)
+            public App()
             {
-                Db = db;
-                Cfg = cfg;               // reads env vars
-                Auth = new AuthService();             // reads env vars (JWT)
-                Users = new UserRepository(Db);
-                Roles = new RoleRepository(Db);
-                UserLogic = new UserServiceLogic(Users, Roles);
-                RoleLogic = new RoleService(Roles, Users);
+                // Everything is lazy-resolved the first time it’s touched.
+                var c = ObjectContainer.Instance;
+                Cfg = c.Get<IConfiguration>();
+                Db = c.Get<IDbConnectionFactory>();
+                Auth = c.Get<AuthService>();
+                Users = c.Get<UserRepository>();
+                Roles = c.Get<RoleRepository>();
+                UserLogic = c.Get<UserServiceLogic>();
+                RoleLogic = c.Get<RoleService>();
             }
         }
     }
